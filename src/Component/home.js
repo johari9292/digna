@@ -30,6 +30,7 @@ class  App extends React.Component{
           <div className="carousel-container">
             <div className="carousel-content">
             {/* <h1 ><img src="img/digna_logo_no_slogan.png"  alt="image" /></h1> */}
+            <h1></h1>
               <h2>AI Technique</h2>
               <p>Some thing that describe above diffrent from first one</p>
               <a href="#featured-services" className="btn-get-started scrollto">Request Quote</a>
@@ -41,6 +42,7 @@ class  App extends React.Component{
           <div className="carousel-container">
             <div className="carousel-content">
             {/* <h1 ><img src="img/digna_logo_no_slogan.png"  alt="image" /></h1> */}
+            <h1></h1>
               <h2>Data Analaysis</h2>
               <p>Describing above diffrent from other 2</p>
               <a href="#featured-services" className="btn-get-started scrollto">Request Quote</a>
