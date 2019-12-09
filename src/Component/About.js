@@ -36,7 +36,7 @@ changes or releases in source system. In many cases, the negative impact of thes
 issues becomes only visible in the final report often undiscovered until data reports
 are published. Usual strategies to handle the risk of wrong data and delays are
 comprehensive rulesets of data quality checks and manual checks, performed by
-domain experts.
+domain experts.<br></br> <br></br> <br></br>
                 </p>
               </div>
             </div>
@@ -54,7 +54,7 @@ WITH MINIMAL MAINTENANCE</a></h2>
 data after the load and even identify anomalies in reports you deliver to your users. DIGNA comes with a
 GUI - Client for ad-hoc analysis and a command line interface for integration in an ETL process. The use
 of artificial intelligence enables DIGNA to understand the structure of your data very quickly. True to the
-motto, detect anomalies before anyone else does!
+motto, detect anomalies before anyone else does!<br></br><br></br>
                 </p>
               </div>
             </div>
@@ -67,6 +67,7 @@ motto, detect anomalies before anyone else does!
                 </div>
                 <h2 className="title"><a href="#">BENEFITS
 OF USING DIGNA</a></h2>
+<br></br>
                 <p>
                 Human-based monitoring is expensive, error-prone and infeasible in a large
 DWH. DIGNA will learn all patterns in your data and inform you about suspicious
@@ -74,8 +75,7 @@ deviations and optionally, interact with the data warehouse refreshing/publishin
 processes. DIGNA works for you day and night, even when your employees are
 sleeping.
 By capturing issues early in the process, the data warehouse team will need to
-spend less efforts in fixing erroneous data (for example by re-processing past
-data) and it will be able to deliver good data quality in better time.
+spend less efforts in fixing erroneous data  and it will be able to deliver good data quality in better time.
                 </p>
               </div>
             </div>
