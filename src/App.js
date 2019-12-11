@@ -16,7 +16,8 @@ class  App extends React.Component{
 
  render(){
    return(
-     <div><Navbars>
+     <div><br></br><br></br>
+       <Navbars>
        
      </Navbars>
      <Home/>
