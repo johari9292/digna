@@ -12,7 +12,7 @@ render() {
     <div id="header_outer " >
 		<div className="container">
 			<div className="header_section">
-				<div className="logo"><a href="javascript:void(0)"><img src="img/Header.png" alt=""/></a></div>
+				<div className="logo"><a href="javascript:void(0)"><img src="img/Header@2x.png" alt=""/></a></div>
 				<nav className="nav  " id="nav">
 					<ul className="toggle">
 						<li><a href="#">Home</a></li>
