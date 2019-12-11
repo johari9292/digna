@@ -3,6 +3,7 @@
 
 import React, { Component } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Responsive from 'react-responsive-decorator';
 
 import {  Navbar,  NavbarBrand, Nav,NavItem,NavLink,Container} from 'reactstrap';
 // import { Button } from 'reactstrap';
@@ -53,4 +54,4 @@ class  App extends React.Component{
 
 
 
-export default App;
+export default Responsive(App);

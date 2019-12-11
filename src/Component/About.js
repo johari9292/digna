@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Responsive from 'react-responsive-decorator';
 
 
 class  App extends React.Component{
@@ -90,4 +91,4 @@ spend less efforts in fixing erroneous data  and it will be able to deliver good
 
 
 
-export default App;
+export default Responsive(App);
