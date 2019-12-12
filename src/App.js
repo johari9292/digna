@@ -7,8 +7,7 @@ import Featureservice from './Component/Featureservice'
 import Responsive from 'react-responsive-decorator';
 import {  Navbar,  NavbarBrand, Nav,NavItem,NavLink,Container} from 'reactstrap';
 // import { Button } from 'reactstrap';
-
-class  App extends React.Component{
+import { StickyContainer, Sticky } from 'react-sticky';class  App extends React.Component{
   constructor() {
     super();
    
@@ -17,10 +16,17 @@ class  App extends React.Component{
  render(){
    return(
      <div><br></br><br></br>
-       <Navbars>
-       
-     </Navbars>
-     <Home/>
+     <div  >
+     <Navbars />
+     </div>
+   
+   <div>
+   <Home/>
+       <About/>
+   </div>
+     
+   
+    
      
       </div>
        

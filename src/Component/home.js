@@ -12,7 +12,7 @@ class  App extends React.Component{
     <div >  
     
 	<div id="top_content" className="top_cont_outer">
-		<div className="top_cont_inner">
+		<div  className="top_cont_inner" >
 			<div className="container">
 				<div className="top_content">
 					<div className="row">
@@ -25,7 +25,7 @@ class  App extends React.Component{
 								in Data Warehouse using Arificial Intelligence </p>
 								<a href="#service" className="learn_more2">Request a Demo</a> </div>
 						</div>
-						<div className="col-lg-7 col-sm-5"> </div>
+						<div className="col-lg-7 col-sm-5"></div>
 					</div>
 				</div>
 			</div>

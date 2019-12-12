@@ -9,6 +9,7 @@ class NavbarPage extends Component {
 
 render() {
   return ( 
+   
     <div id="header_outer " >
 		<div className="container">
 			<div className="header_section">
