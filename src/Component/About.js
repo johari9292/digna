@@ -37,11 +37,11 @@ are published. </p>
           <div id="about"  >
         <div className=" pattren container">
        
-          <div className="row about-cols">
+          <div className="row about-cols" id="col1">
             <div className="col-md-4 wow fadeInUp">
               <div className="about-col">
                 <div className="img">
-					<br></br><br></br><br></br>
+					
                   <img src="img/Anomaly detection.png" alt=" Mission"  className="img-fluid icon" />
                  
                   {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
@@ -60,7 +60,7 @@ are published.<br></br> <br></br> <br></br>
             <div className="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
               <div className="about-col">
                 <div className="img">
-				<br></br><br></br><br></br>
+			
                   <img src="img/Benefits.png" alt="" className="img-fluid icon" />
                   {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
                   <br></br>
@@ -77,7 +77,7 @@ GUI - Client for ad-hoc analysis and a command line interface for integration in
             <div className="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
               <div className="about-col">
                 <div className="img">
-				<br></br><br></br><br></br>
+			
                   <img src="img/Minimal maintenance.png" alt="vision" className="img-fluid icon" />
                   {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
                   <br></br>

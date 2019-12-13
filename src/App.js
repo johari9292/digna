@@ -16,7 +16,7 @@ import { StickyContainer, Sticky } from 'react-sticky';class  App extends React.
  render(){
    return(
      <div>
-     <br></br> <br></br>
+     <br></br>
      <Navbars />
      
    
