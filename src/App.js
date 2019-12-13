@@ -15,10 +15,10 @@ import { StickyContainer, Sticky } from 'react-sticky';class  App extends React.
 
  render(){
    return(
-     <div><br></br><br></br>
-     <div  >
+     <div>
+     <br></br> <br></br>
      <Navbars />
-     </div>
+     
    
    <div>
    <Home/>
