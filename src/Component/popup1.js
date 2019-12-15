@@ -44,7 +44,7 @@ class  App extends React.Component{
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Last name</Label>
-                <Input type="password" name="password" id="examplePassword" placeholder="Enter your last name" />
+                <Input type="text" name="password" id="examplePassword" placeholder="Enter your last name" />
               </FormGroup>
             </Col>
           </Row>
@@ -52,20 +52,20 @@ class  App extends React.Component{
           <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Business email</Label>
-                <Input type="password" name="password" id="examplePassword" placeholder="Enter you business email" />
+                <Input type="text" name="password" id="examplePassword" placeholder="Enter you business email" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Phone number</Label>
-                <Input type="password" name="password" id="examplePassword" placeholder="+54-545-3617-3451" />
+                <Input type="text" name="password" id="examplePassword" placeholder="+54-545-3617-3451" />
               </FormGroup>
             </Col>
             </Row><Row>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Job title</Label>
-                <Input type="password" name="password" id="examplePassword" placeholder="Enter your job title" />
+                <Input type="text" name="password" id="examplePassword" placeholder="Enter your job title" />
               </FormGroup>
             </Col>
             </Row>
