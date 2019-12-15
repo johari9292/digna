@@ -1,48 +1,36 @@
 import React, { Component } from "react";
-import Responsive from 'react-responsive-decorator';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Popup from "reactjs-popup";
 import { Col, Button,Row, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+
+/**
+ *
+ *
+ * @class App
+ * @extends {React.Component}
+ */
 class  App extends React.Component{
   constructor() {
     super();
    
   }  
-  demo =()=>{
-	  return(
-		<a href="#service" className="learn_more2">Request a Demo</a>
-	  )
-  }
 
+ /**
+  *
+  *
+  * @returns
+  * @memberof App
+  */
+ /**
+  *
+  *
+  * @returns
+  * @memberof App
+  */
  render(){
    return(
-    <div >  
-    
-	<div id="top_content" className="top_cont_outer">
-		<div  className="top_cont_inner" >
-			<div className="container">
-				<div className="top_content">
-
-					<div className="row">
-					
-						<div className="col-lg-5 col-sm-9">
-							<div className="top_left_cont flipInY abc wow animated">
-								<h3>Automated Anamoly Detection</h3>
-								<h2>Intelligent<br>
-								</br> Data Inspection</h2>
-								<p> Automated Monitering and Error Detection<br></br>
-								in Data Warehouse using Arificial Intelligence </p>
-								{this.demo()}
-								{/* <a href="#service" className="learn_more2">Request a Demo</a> </div> */}
-					</div>	</div>
-						{/* <div className="col-lg-2 col-sm-4">
-
-						</div> */}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<Popup trigger={ this.demo()} position="center center" className='foo'  modal repositionOnResize style ="width:33%" >
+    <div id="pop1"> <Popup trigger={ <li>		<a href="#" className="learn_more22">Request a Demo</a> 
+    </li>} position="center center" className='foo'  modal repositionOnResize style ="width:33%" >
     <Form id = "form1"><h2 style={{textAlign:"center"}}>Intelligent Data Inspection</h2>
     <p style={{textAlign:"center", color:"blue"}}>Just answer a few  simple questions<br></br> so we can personalize the right experience for you </p>
         <br></br>
@@ -96,13 +84,12 @@ class  App extends React.Component{
           </Row>
         </Form>
       </Popup>
-	  		
-  </div>
-      
+      </div>
+       
    )
  }
 }
 
 
 
-export default Responsive(App);
+export default App;

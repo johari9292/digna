@@ -309,7 +309,7 @@ height: 40px;
 border-radius: 6px;
 background-color: #5059f8;
 	 line-height:46px;
-	 
+	
 	 text-align:center;
 	 font-family:''Dosis'';
 	 text-transform:uppercase;
@@ -513,5 +513,34 @@ a.last2:hover{
 	a.last3:hover{
 		background:#f2f4f8;
 		}
- 
- 
+ #pop1{
+	
+	width:33%;
+ }
+		.foo-overlay{
+			
+			
+			height:100%;
+			width: 100%;
+			
+		  }
+		
+#form1{
+	background:#f2f4f8;
+	
+	width: 100%;
+	border: #f2f4f8;
+	border-radius: 6px;
+	
+}
+
+#formgroup{
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	
+}
+#label1{
+	font-weight: bold;
+}

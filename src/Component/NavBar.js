@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import Responsive from 'react-responsive-decorator';
 
 // import { BrowserRouter as Router } from 'react-router-dom';
-import {  Navbar,  NavbarBrand, Nav,NavItem,NavLink,Container} from 'reactstrap';
+
 import './nav.css'
+import Popupcomp from './popup1'
 class NavbarPage extends Component {
 
 
@@ -25,9 +26,8 @@ render() {
           <li  className=" list1"><a href="#t">About Us</a></li>
           <li  className=" list1"><a href="#">Services</a></li>
           <li  className=" list1"><a href="#">Contact</a></li>
-         
-         <li>		<a href="#" className="learn_more22">Request a Demo</a> 
-</li>
+         <Popupcomp/>
+        
          
         </ul>
       </nav>
