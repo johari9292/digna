@@ -121,7 +121,7 @@ processes.
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1'  for="exampleEmail">First name</Label>
-                <Input type="email" name="email" id="exampleEmail" placeholder="Enter your first name" />
+                <Input type="text" name="email" id="exampleEmail" placeholder="Enter your first name" />
               </FormGroup>
             </Col>
             <Col md={6}>
@@ -135,7 +135,7 @@ processes.
           <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Business email</Label>
-                <Input type="text" name="password" id="examplePassword" placeholder="Enter you business email" />
+                <Input type="email" name="password" id="examplePassword" placeholder="Enter you business email" />
               </FormGroup>
             </Col>
             <Col md={6}>
