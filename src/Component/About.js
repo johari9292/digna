@@ -47,8 +47,8 @@ are published. </p>
                   {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
                   <br></br>
                 </div>
-                <h2 className="title"><a href="#">ANOMALY DETECTION
-FOR DATA WAREHOUSES</a></h2>
+                <h2 className="title"><a href="#">Anamoly<br></br> detection
+for  data<br></br> warehouses</a></h2>
                 <p>
                 Data quality issues are frequently caused by corrupted data delivery and unaligned
 changes or releases in source system. In many cases, the negative impact of these
@@ -65,8 +65,8 @@ are published.<br></br> <br></br> <br></br>
                   {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
                   <br></br>
                 </div>
-                <h2 className="title"><a href="#">HIGHLY VERSATILE
-WITH MINIMAL MAINTENANCE</a></h2>
+                <h2 className="title"><a href="#">Highly verisatile<br></br>
+with minimal<br></br>maintenance</a></h2>
                 <p>
                 DIGNA can be used in many places (layers) in a Data Warehouse: it can check incoming data, validate
 data after the load and even identify anomalies in reports you deliver to your users. DIGNA comes with a
@@ -82,8 +82,8 @@ GUI - Client for ad-hoc analysis and a command line interface for integration in
                   {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
                   <br></br>
                 </div>
-                <h2 className="title"><a href="#">BENEFITS
-OF USING DIGNA</a></h2>
+                <h2 className="title"><a href="#">Benefits of <br></br>
+ using DIGNA</a></h2>
 <br></br>
                 <p>
                 Human-based monitoring is expensive, error-prone and infeasible in a large
@@ -103,9 +103,20 @@ processes.
 
   </div>
 	</div>
-	<div className="blackbg">
-    
+	<div id="blackbg" >
+    <div className="row" id='lastrow'>
+    <div className='col-md-4' id="last1">
+      Powered by <img src="img/dexti.png"  alt="image" />
+     
+    </div>
+    <div  className='col-md-4' id='last2'>
+    <a href="#service" className="last2">Request a Demo</a> 
+    </div>
+    <div  className='col-md-4' id='last3'>
+    <a href="#service" className="last3">Subscribe Newsletter</a> 
+    </div>
 	</div>
+  </div>
   </div>
 
        

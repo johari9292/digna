@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Responsive from 'react-responsive-decorator';
-
 class  App extends React.Component{
   constructor() {
     super();
@@ -18,7 +17,7 @@ class  App extends React.Component{
 
 					<div className="row">
 					
-						<div className="col-lg-7 col-sm-8">
+						<div className="col-lg-5 col-sm-7">
 							<div className="top_left_cont flipInY abc wow animated">
 								<h3>Automated Anamoly Detection</h3>
 								<h2>Intelligent<br>
@@ -27,9 +26,9 @@ class  App extends React.Component{
 								in Data Warehouse using Arificial Intelligence </p>
 								<a href="#service" className="learn_more2">Request a Demo</a> </div>
 						</div>
-						{/* <div className="col-lg-2 col-sm-4">
+						<div className="col-lg-2 col-sm-4">
 
-						</div> */}
+						</div>
 					</div>
 				</div>
 			</div>
