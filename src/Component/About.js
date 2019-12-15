@@ -105,14 +105,14 @@ processes.
 	</div>
 	<div id="blackbg" >
     <div className="row" id='lastrow'>
-    <div className='col-md-4' id="last1">
+    <div className='col-lg-4 col-md-6 col-sm-9' id="last1">
       Powered by <img src="img/dexti.png"  alt="image" />
      
     </div>
-    <div  className='col-md-4' id='last2'>
+    <div  className='col-lg-4 col-md-6 col-sm-9' id='last2'>
     <a href="#service" className="last2">Request a Demo</a> 
     </div>
-    <div  className='col-md-4' id='last3'>
+    <div  className='col-lg-4 col-md-6 col-sm-9' id='last3'>
     <a href="#service" className="last3">Subscribe Newsletter</a> 
     </div>
 	</div>

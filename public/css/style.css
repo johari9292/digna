@@ -431,21 +431,24 @@ background-color: #5059f8;
 	   
  #blackbg{
 	 background-color: black;
-	 height: 150px ;
+	 /* height: 150px ; */
 	
  }
  #lastrow{
 	/* margin-right: 80px; */
 		/* margin-left: 80px; */
-	padding-top: 5%;
-	position: relative;
+	padding-top: 70px;
+	
  }
 #last1{
-	padding-left: 17%;
+	padding-left: 230px;
+	margin-bottom: 60px;
+	margin-top: 60px;
 	width: 310px;
   height: 40px;
   border-radius: 6px;
   color: white;
+  text-align: center;
   
  
 }
@@ -456,9 +459,12 @@ a.last2{
 	display:block;
 	font-size:16px;
 	color:#ffffff;
-	margin-left: 19%;
+	/* margin-left: 76px; */
    margin-top: -8px;
-
+ margin-bottom: 60px;
+   margin-top: 60px;
+margin-left: 73px;
+margin-right: 73px;
 background-color: #5059f8;
 	line-height:46px;
 	width: 281px;
@@ -482,14 +488,18 @@ a.last2:hover{
 		display:block;
 		font-size:16px;
 		color:#ffffff;
-		
 		margin-top: -8px;
+    
+		margin-left: -60px;
+		margin-right:-60px;
+	/* padding-left: 10px;
+	padding-right: 30px; */
 	background-color: black;
 		line-height:46px;
-		
+		margin-bottom: 60px;
+		margin-top: 60px;
 		height: 40px;
 		border-radius: 6px;
-		margin-left: -15%;
 		/* background-color: #5059f8; */
 		width: 281px;
 		text-align:center;
