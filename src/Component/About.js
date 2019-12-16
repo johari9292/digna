@@ -121,13 +121,13 @@ processes.
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1'  for="exampleEmail">First name</Label>
-                <Input type="text" name="email" id="exampleEmail" placeholder="Enter your first name" />
+                <Input type="text" name="first name" id="exampleEmail" placeholder="Enter your first name" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Last name</Label>
-                <Input type="text" name="password" id="examplePassword" placeholder="Enter your last name" />
+                <Input type="text" name="last name" id="examplePassword" placeholder="Enter your last name" />
               </FormGroup>
             </Col>
           </Row>
@@ -135,27 +135,27 @@ processes.
           <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Business email</Label>
-                <Input type="email" name="password" id="examplePassword" placeholder="Enter you business email" />
+                <Input type="email" name="email" id="examplePassword" placeholder="Enter you business email" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Phone number</Label>
-                <Input type="text" name="password" id="examplePassword" placeholder="+54-545-3617-3451" />
+                <Input type="text" name="phone" id="examplePassword" placeholder="+54-545-3617-3451" />
               </FormGroup>
             </Col>
             </Row><Row>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Job title</Label>
-                <Input type="text" name="password" id="examplePassword" placeholder="Enter your job title" />
+                <Input type="text" name="job" id="examplePassword" placeholder="Enter your job title" />
               </FormGroup>
             </Col>
             </Row>
             <Row>
             <Col md={11}>
           <FormGroup style={{width:'100%'}} id="formgroup">
-            <Label id='label1' for="exampleAddress2">What would you be using DIGNA for?</Label>
+            <Label id='label1' for="">What would you be using DIGNA for?</Label>
             <Input type="text" name="address2" id="exampleAddress2" placeholder=""/>
           </FormGroup>
           </Col>
@@ -182,13 +182,13 @@ processes.
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1'  for="exampleEmail">Full name</Label>
-                <Input type="text" name="email" id="exampleEmail" placeholder="Enter your first name" />
+                <Input type="text" name="name" id="exampleEmail" placeholder="Enter your  name" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Business email</Label>
-                <Input type="email" name="email" id="examplePassword" placeholder="Enter your last name" />
+                <Input type="email" name="email" id="examplePassword" placeholder="Enter your Email" />
               </FormGroup>
             </Col>
           </Row>
