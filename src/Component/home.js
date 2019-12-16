@@ -31,18 +31,8 @@ class  App extends React.Component{
 								</br> Data Inspection</h2>
 								<p> Automated Monitering and Error Detection<br></br>
 								in Data Warehouse using Arificial Intelligence </p>
-								{this.demo()}
-								{/* <a href="#service" className="learn_more2">Request a Demo</a> </div> */}
-					</div>	</div>
-						{/* <div className="col-lg-2 col-sm-4">
-
-						</div> */}
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<Popup trigger={ this.demo()} position="center center" className='foo'  modal repositionOnResize style ="width:33%" >
+								<div id = 'pop1'>
+	<Popup trigger={ this.demo()} position="center center" contentStyle={{width:'34%'}} className='foo'  modal repositionOnResize  >
     <Form id = "form1"><h2 style={{textAlign:"center"}}>Intelligent Data Inspection</h2>
     <p style={{textAlign:"center", color:"blue"}}>Just answer a few  simple questions<br></br> so we can personalize the right experience for you </p>
         <br></br>
@@ -95,8 +85,19 @@ class  App extends React.Component{
           </Col>
           </Row>
         </Form>
-      </Popup>
-	  		
+      </Popup></div>
+	
+								{/* <a href="#service" className="learn_more2">Request a Demo</a> </div> */}
+					</div>	</div>
+						{/* <div className="col-lg-2 col-sm-4">
+
+						</div> */}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  		
   </div>
       
    )

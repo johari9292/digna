@@ -17,7 +17,7 @@ class  App extends React.Component{
 			<div className="container">
 				<div className="top_content">
 					<div className="row">
-						<div className="col-lg-5 col-sm-7">
+						<div className="col-lg-5 col-sm-10">
 							<div className="top_left_cont flipInY wow animated">
 								{/* <h3>Automated Anamoly Detection</h3> */}
 								<h2>About/ <img src="img/Header.png"  alt="image" /></h2>
@@ -39,7 +39,7 @@ are published. </p>
         <div className=" pattren container">
        
           <div className="row about-cols" id="col1">
-            <div className="col-md-4 wow fadeInUp">
+            <div className="col wow fadeInUp">
               <div className="about-col">
                 <div className="img">
 					
@@ -58,7 +58,7 @@ are published.<br></br> <br></br> <br></br>
                 </p>
               </div>
             </div>
-            <div className="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div className="col wow fadeInUp" data-wow-delay="0.1s">
               <div className="about-col">
                 <div className="img">
 			
@@ -75,7 +75,7 @@ GUI - Client for ad-hoc analysis and a command line interface for integration in
                 </p>
               </div>
             </div>
-            <div className="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div className="col wow fadeInUp" data-wow-delay="0.2s">
               <div className="about-col">
                 <div className="img">
 			
@@ -106,14 +106,14 @@ processes.
 	</div>
 	<div id="blackbg" >
     <div className="row" id='lastrow'>
-    <div className='col-lg-4 col-md-6 col-sm-9' id="last1">
+    <div className='col' id="last1">
       Powered by <img src="img/dexti.png"  alt="image" />
      
     </div>
-    <div  className='col-lg-4 col-md-6 col-sm-9' id='last2'>
+    <div  className='col' id='last2'>
     
 
-    <Popup trigger={  <a href="#service" className="last2">Request a Demo</a>} position="center center" className='foo'  modal repositionOnResize style ="width:33%" >
+    <Popup trigger={  <a href="#service" className="last2">Request a Demo</a>} contentStyle={{width:'34%'}} position="center center" className='foo'  modal repositionOnResize style ="width:33%" >
     <Form id = "form1"><h2 style={{textAlign:"center"}}>Intelligent Data Inspection</h2>
     <p style={{textAlign:"center", color:"blue"}}>Just answer a few  simple questions<br></br> so we can personalize the right experience for you </p>
         <br></br>
@@ -166,11 +166,42 @@ processes.
           </Col>
           </Row>
         </Form>
+     
       </Popup>
 
     </div>
-    <div  className='col-lg-4 col-md-6 col-sm-9' id='last3'>
-    <a href="#service" className="last3">Subscribe Newsletter</a> 
+    <div  className='col' id='last3'>
+    
+    <Popup trigger={     <a href="#service" className="last3">Subscribe Newsletter</a> 
+} contentStyle={{width:'34%'}} position="center center" className='foo'  modal repositionOnResize style ="width:33%" >
+    <Form id = "form1"><h2 style={{textAlign:"center"}}> <img src="img/icons8-year_of_monkey.png"  alt="image" /> <br></br>Get Our Newsletter</h2>
+    <p style={{textAlign:"center", color:"blue"}}> Want latest and greatest from our team striaght to your inbox?<br></br>
+    chuck us your details and get a sweet weekly email </p>
+        <br></br>
+          <Row form>
+            <Col md={6}>
+              <FormGroup id="formgroup">
+                <Label id='label1'  for="exampleEmail">Full name</Label>
+                <Input type="text" name="email" id="exampleEmail" placeholder="Enter your first name" />
+              </FormGroup>
+            </Col>
+            <Col md={6}>
+              <FormGroup id="formgroup">
+                <Label id='label1' for="examplePassword">Business email</Label>
+                <Input type="email" name="email" id="examplePassword" placeholder="Enter your last name" />
+              </FormGroup>
+            </Col>
+          </Row>
+          
+          
+          <Row>
+          <Col md={11}>
+          <Button style={{width:'100%'}} color='primary' id="formgroup">Subscribe</Button>
+          </Col>
+          </Row>
+        </Form>
+     
+      </Popup>
     </div>
 	</div>
   </div>

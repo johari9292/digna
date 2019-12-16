@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Responsive from 'react-responsive-decorator';
-
+import Popup from "reactjs-popup";
 // import { BrowserRouter as Router } from 'react-router-dom';
-
+import { Col, Button,Row, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './nav.css'
 import Popupcomp from './popup1'
 class NavbarPage extends Component {

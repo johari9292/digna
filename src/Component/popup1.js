@@ -38,13 +38,13 @@ class  App extends React.Component{
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1'  for="exampleEmail">First name</Label>
-                <Input type="text" name="email" id="exampleEmail" placeholder="Enter your first name" />
+                <Input type="text" name="firstname" id="exampleEmail" placeholder="Enter your first name" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Last name</Label>
-                <Input type="text" name="password" id="examplePassword" placeholder="Enter your last name" />
+                <Input  type="text" name="lastname" id="examplePassword" placeholder="Enter your last name" />
               </FormGroup>
             </Col>
           </Row>
@@ -52,20 +52,20 @@ class  App extends React.Component{
           <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Business email</Label>
-                <Input type="email" name="password" id="examplePassword" placeholder="Enter you business email" />
+                <Input  type="email" name="email" id="examplePassword" placeholder="Enter you business email" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Phone number</Label>
-                <Input type="text" name="password" id="examplePassword" placeholder="+54-545-3617-3451" />
+                <Input  type="text" name="phoeeno" id="examplePassword" placeholder="+54-545-3617-3451" />
               </FormGroup>
             </Col>
             </Row><Row>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Job title</Label>
-                <Input type="text" name="password" id="examplePassword" placeholder="Enter your job title" />
+                <Input  type="text" name="job title" id="examplePassword" placeholder="Enter your job title" />
               </FormGroup>
             </Col>
             </Row>
@@ -73,7 +73,7 @@ class  App extends React.Component{
             <Col md={11}>
           <FormGroup style={{width:'100%'}} id="formgroup">
             <Label id='label1' for="exampleAddress2">What would you be using DIGNA for?</Label>
-            <Input type="text" name="address2" id="exampleAddress2" placeholder=""/>
+            <Input type="text" name="" id="exampleAddress2" placeholder=""/>
           </FormGroup>
           </Col>
           </Row>
