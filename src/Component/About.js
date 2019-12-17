@@ -1,13 +1,44 @@
 import React, { Component } from "react";
 import Responsive from 'react-responsive-decorator';
 import Popup from "reactjs-popup";
+import axios from 'axios';
 import { Col, Button,Row, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 class  App extends React.Component{
   constructor() {
     super();
-   
+   this.state={
+     firstname:'',
+     lastname:'',
+     phone:'',
+     job:'',
+     question:'',
+     email:'',
+     emailsub:'',
+     name:''
+   }
   }  
+
+  onChange = (e)=>{
+    this.setState({
+    [e.target.name]:e.target.value
+    })
+}
+onsubmit = (e)=>{
+  e.preventDefault();
+  axios.get(`http://localhost:8080/addnewsletter/`+this.state.name +'/' + this.state.emailsub)
+}
+  Handlesubmit =(e)=>{
+    e.preventDefault();
+
+ 
+
+    axios.get(`http://localhost:8080/addpopup/`+ this.state.firstname +'/' + this.state.lastname + '/' + this.state.email + '/' + this.state.phone  + '/' + this.state.job + '/'+ this.state.question )
+      .then(res => {
+        console.log(res);
+        console.log(res.data);
+      })
+  } 
 
  render(){
    return(
@@ -113,7 +144,7 @@ processes.
     <div  className='col' id='last2'>
     
 
-    <Popup trigger={  <a href="#service" className="last2">Request a Demo</a>} contentStyle={{width:'34%'}} position="center center" className='foo'  modal repositionOnResize style ="width:33%" >
+    <Popup repositionOnResize={true} trigger={  <a href="#service" className="last2">Request a Demo</a>} contentStyle={{width:'34%'}} position="center center" className='foo'  modal arrow={false} style ="width:33%" >
     <Form id = "form1"><h2 style={{textAlign:"center"}}>Intelligent Data Inspection</h2>
     <p style={{textAlign:"center", color:"blue"}}>Just answer a few  simple questions<br></br> so we can personalize the right experience for you </p>
         <br></br>
@@ -121,13 +152,13 @@ processes.
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1'  for="exampleEmail">First name</Label>
-                <Input type="text" name="first name" id="exampleEmail" placeholder="Enter your first name" />
+                <Input onChange={this.onChange} type="text" name="firstname" id="exampleEmail" placeholder="Enter your first name" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Last name</Label>
-                <Input type="text" name="last name" id="examplePassword" placeholder="Enter your last name" />
+                <Input onChange={this.onChange}  type="text" name="lastname" id="exampjlePassword" placeholder="Enter your last name" />
               </FormGroup>
             </Col>
           </Row>
@@ -135,34 +166,34 @@ processes.
           <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Business email</Label>
-                <Input type="email" name="email" id="examplePassword" placeholder="Enter you business email" />
+                <Input onChange={this.onChange}  type="email" name="email" id="examplejPassword" placeholder="Enter you business email" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Phone number</Label>
-                <Input type="text" name="phone" id="examplePassword" placeholder="+54-545-3617-3451" />
+                <Input onChange={this.onChange}  type="text" name="phone" id="examplekPassword" placeholder="+54-545-3617-3451" />
               </FormGroup>
             </Col>
             </Row><Row>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Job title</Label>
-                <Input type="text" name="job" id="examplePassword" placeholder="Enter your job title" />
+                <Input onChange={this.onChange}  type="text" name="job" id="examplelPassword" placeholder="Enter your job title" />
               </FormGroup>
             </Col>
             </Row>
             <Row>
             <Col md={11}>
           <FormGroup style={{width:'100%'}} id="formgroup">
-            <Label id='label1' for="">What would you be using DIGNA for?</Label>
-            <Input type="text" name="address2" id="exampleAddress2" placeholder=""/>
+            <Label id='label1' for="exampleAddress2">What would you be using DIGNA for?</Label>
+            <Input onChange={this.onChange} type="text" name="question" id="exampleAddress2" placeholder=""/>
           </FormGroup>
           </Col>
           </Row>
           <Row>
           <Col md={11}>
-          <Button style={{width:'100%'}} color='primary' id="formgroup">Request a Demo</Button>
+          <Button style={{width:'100%'}} onClick={this.Handlesubmit} color='primary' id="formgroup">Request a Demo</Button>
           </Col>
           </Row>
         </Form>
@@ -173,7 +204,7 @@ processes.
     <div  className='col' id='last3'>
     
     <Popup trigger={     <a href="#service" className="last3">Subscribe Newsletter</a> 
-} contentStyle={{width:'34%'}} position="center center" className='foo'  modal repositionOnResize style ="width:33%" >
+} contentStyle={{width:'34%'}} position="center center" className='foo'  modal arrow={false} repositionOnResize={true} style ="width:33%" >
     <Form id = "form1"><h2 style={{textAlign:"center"}}> <img src="img/icons8-year_of_monkey.png"  alt="image" /> <br></br>Get Our Newsletter</h2>
     <p style={{textAlign:"center", color:"blue"}}> Want latest and greatest from our team striaght to your inbox?<br></br>
     chuck us your details and get a sweet weekly email </p>
@@ -182,13 +213,13 @@ processes.
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1'  for="exampleEmail">Full name</Label>
-                <Input type="text" name="name" id="exampleEmail" placeholder="Enter your  name" />
+                <Input type="text" onChange={this.onChange} name="name" id="exampleEmail" placeholder="Enter your  name" />
               </FormGroup>
             </Col>
             <Col md={6}>
               <FormGroup id="formgroup">
                 <Label id='label1' for="examplePassword">Business email</Label>
-                <Input type="email" name="email" id="examplePassword" placeholder="Enter your Email" />
+                <Input type="email" onChange={this.onChange} name="emailsub" id="examplePassword" placeholder="Enter your Email" />
               </FormGroup>
             </Col>
           </Row>
@@ -196,7 +227,7 @@ processes.
           
           <Row>
           <Col md={11}>
-          <Button style={{width:'100%'}} color='primary' id="formgroup">Subscribe</Button>
+          <Button onClick={this.onsubmit} style={{width:'100%'}} color='primary' id="formgroup">Subscribe</Button>
           </Col>
           </Row>
         </Form>

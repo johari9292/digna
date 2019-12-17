@@ -32,7 +32,7 @@ class  App extends React.Component{
 								<p> Automated Monitering and Error Detection<br></br>
 								in Data Warehouse using Arificial Intelligence </p>
 								<div id = 'pop1'>
-	<Popup trigger={ this.demo()} position="center center" contentStyle={{width:'34%'}} className='foo'  modal repositionOnResize  >
+	<Popup trigger={ this.demo()} position="center center" arrow={false} contentStyle={{width:'34%'}} className='foo'  modal repositionOnResize={true} >
     <Form id = "form1"><h2 style={{textAlign:"center"}}>Intelligent Data Inspection</h2>
     <p style={{textAlign:"center", color:"blue"}}>Just answer a few  simple questions<br></br> so we can personalize the right experience for you </p>
         <br></br>
