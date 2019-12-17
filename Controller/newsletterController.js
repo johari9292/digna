@@ -27,7 +27,7 @@ exports.addnewsletter = (req, res) => {
                 // to: 'marcin.chudeusz@dext.ai',
                 to:'joharibalti1996@gmail.com',
                  subject: 'Thier is  new Subscriber for you. Detail is following',
-                text:"\nName:     " +req.params.name +
+                text:"\nHere is your new subscriber detail\nName:     " +req.params.name +
                      "\nEmail:      "+req.params.emailsub
                      
                 
