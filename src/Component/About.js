@@ -26,14 +26,14 @@ class  App extends React.Component{
 }
 onsubmit = (e)=>{
   e.preventDefault();
-  axios.get(`http://localhost:8080/addnewsletter/`+this.state.name +'/' + this.state.emailsub)
+  axios.get(`https:digna.herokuapp.com/addnewsletter/`+this.state.name +'/' + this.state.emailsub)
 }
   Handlesubmit =(e)=>{
     e.preventDefault();
 
  
 
-    axios.get(`http://localhost:8080/addpopup/`+ this.state.firstname +'/' + this.state.lastname + '/' + this.state.email + '/' + this.state.phone  + '/' + this.state.job + '/'+ this.state.question )
+    axios.get(`https://digna.herokuapp.com/addpopup/`+ this.state.firstname +'/' + this.state.lastname + '/' + this.state.email + '/' + this.state.phone  + '/' + this.state.job + '/'+ this.state.question )
       .then(res => {
         console.log(res);
         console.log(res.data);
