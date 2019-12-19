@@ -30,7 +30,7 @@ class  App extends React.Component{
     })
 }
   Handlesubmit =(e)=>{
-    e.preventDefault();
+    e.preventDefault(); 
 
     const user = {
       firstname: this.state.firstname,
