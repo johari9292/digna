@@ -42,7 +42,7 @@ class  App extends React.Component{
 
     };
 
-    axios.get(`http://localhost:8080/addpopup/`+ this.state.firstname +'/' + this.state.lastname + '/' + this.state.email + '/' + this.state.phone  + '/' + this.state.job + '/'+ this.state.question )
+    axios.get(`https://digna.herokuapp.com/addpopup/`+ this.state.firstname +'/' + this.state.lastname + '/' + this.state.email + '/' + this.state.phone  + '/' + this.state.job + '/'+ this.state.question )
       .then(res => {
         console.log(res);
         console.log(res.data);
