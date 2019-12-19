@@ -31,8 +31,8 @@ exports.addpopup = (req, res) => {
           
             var mailOptions = {
                 from: 'johari9292@gmail.com',
-                to: 'marcin.chudeusz@dext.ai',
-                // to:'joharibalti1996@gmail.com',
+//                 to: 'marcin.chudeusz@dext.ai',
+                to:'joharibalti1996@gmail.com',
                  subject: 'thier is new demo request',
                 text:"\nfirstname:     " +req.params.firstname +
                      "\nlastname:      "+req.params.lastname+
