@@ -33,7 +33,6 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "proxy": "http://digna.herokuapp.com:8080",
   "browserslist": {
     "production": [
       ">0.2%",
