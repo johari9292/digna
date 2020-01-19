@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Responsive from 'react-responsive-decorator';
 import Popup from "reactjs-popup";
 import axios from 'axios';
+import './about.css'
 import { Col, Button,Row, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
 class  App extends React.Component{
@@ -26,14 +27,14 @@ class  App extends React.Component{
 }
 onsubmit = (e)=>{
   e.preventDefault();
-  axios.get(`https:digna.herokuapp.com/addnewsletter/`+this.state.name +'/' + this.state.emailsub)
+  axios.get(`http://localhost:8080/addnewsletter/`+this.state.name +'/' + this.state.emailsub)
 }
   Handlesubmit =(e)=>{
     e.preventDefault();
 
  
 
-    axios.get(`https://digna.herokuapp.com/addpopup/`+ this.state.firstname +'/' + this.state.lastname + '/' + this.state.email + '/' + this.state.phone  + '/' + this.state.job + '/'+ this.state.question )
+    axios.get(`http://localhost:8080/addpopup/`+ this.state.firstname +'/' + this.state.lastname + '/' + this.state.email + '/' + this.state.phone  + '/' + this.state.job + '/'+ this.state.question )
       .then(res => {
         console.log(res);
         console.log(res.data);
@@ -43,109 +44,12 @@ onsubmit = (e)=>{
  render(){
    return(
      <div>
-    <div id="top_content" className="top_cont_outer bgcolor">
-		<div id ="bk" className="top_cont_inner1">
-			<div className="container">
-				<div className="top_content">
-					<div className="row">
-						<div className="col-lg-5 col-sm-10">
-							<div className="top_left_cont flipInY wow animated">
-								{/* <h3>Automated Anamoly Detection</h3> */}
-								<h2>About/ <img src="img/Header.png"  alt="image" /></h2>
-								<p> Data quality issues are frequently caused by corrupted data delivery and unaligned
-changes or releases in source system. In many cases, the negative impact of these
-issues becomes only visible in the final report often undiscovered until data reports
-are published. </p>
-								</div>
-						</div>
-						<div className="col-lg-7 col-sm-5 is1" >  </div>
-					</div>
-				</div>
-			</div>
-		</div>
-    
-  <div className="pattren" >
-  <div>
-          <div id="about"  >
-        <div className=" pattren container">
-       
-          <div className="row about-cols" id="col1">
-            <div className="col wow fadeInUp">
-              <div className="about-col">
-                <div className="img">
-					
-                  <img src="img/Anomaly detection.png" alt=" Mission"  className="img-fluid icon" />
-                 
-                  {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
-                  <br></br>
-                </div>
-                <h2 className="title"><a href="#">Anamoly<br></br> detection
-for  data<br></br> warehouses</a></h2>
-                <p>
-                Data quality issues are frequently caused by corrupted data delivery and unaligned
-changes or releases in source system. In many cases, the negative impact of these
-issues becomes only visible in the final report often undiscovered until data reports
-are published.<br></br> <br></br> <br></br>
-                </p>
-              </div>
-            </div>
-            <div className="col wow fadeInUp" data-wow-delay="0.1s">
-              <div className="about-col">
-                <div className="img">
-			
-                  <img src="img/Benefits.png" alt="" className="img-fluid icon" />
-                  {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
-                  <br></br>
-                </div>
-                <h2 className="title"><a href="#">Highly verisatile<br></br>
-with minimal<br></br>maintenance</a></h2>
-                <p>
-                DIGNA can be used in many places (layers) in a Data Warehouse: it can check incoming data, validate
-data after the load and even identify anomalies in reports you deliver to your users. DIGNA comes with a
-GUI - Client for ad-hoc analysis and a command line interface for integration in an ETL process. <br></br><br></br>
-                </p>
-              </div>
-            </div>
-            <div className="col wow fadeInUp" data-wow-delay="0.2s">
-              <div className="about-col">
-                <div className="img">
-			
-                  <img src="img/Minimal maintenance.png" alt="vision" className="img-fluid icon" />
-                  {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
-                  <br></br>
-                </div>
-                <h2 className="title"><a href="#">Benefits of <br></br>
- using DIGNA</a></h2>
-<br></br>
-                <p>
-                Human-based monitoring is expensive, error-prone and infeasible in a large
-DWH. DIGNA will learn all patterns in your data and inform you about suspicious
-deviations and optionally, interact with the data warehouse refreshing/publishing
-processes. 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>{/* #about */}
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" id='modal1'>
      
-	  </div>
-
-
-
-  </div>
-	</div>
-	<div id="blackbg" >
-    <div className="row" id='lastrow'>
-    <div className='col' id="last1">
-      Powered by <img src="img/dexti.png"  alt="image" />
-     
-    </div>
-    <div  className='col' id='last2'>
-    
-
-    <Popup repositionOnResize={true} trigger={  <a href="#service" className="last2">Request a Demo</a>} contentStyle={{width:'34%'}} position="center center" className='foo'  modal arrow={false} style ="width:33%" >
-    <Form id = "form1"><h2 style={{textAlign:"center"}}>Intelligent Data Inspection</h2>
+      <div class="modal-body">
+      <Form id = "form1"><h2 style={{textAlign:"center"}}>Intelligent Data Inspection</h2>
     <p style={{textAlign:"center", color:"blue"}}>Just answer a few  simple questions<br></br> so we can personalize the right experience for you </p>
         <br></br>
           <Row form>
@@ -197,15 +101,18 @@ processes.
           </Col>
           </Row>
         </Form>
-     
-      </Popup>
-
+      </div>
+      
     </div>
-    <div  className='col' id='last3'>
-    
-    <Popup trigger={     <a href="#service" className="last3">Subscribe Newsletter</a> 
-} contentStyle={{width:'34%'}} position="center center" className='foo'  modal arrow={false} repositionOnResize={true} style ="width:33%" >
-    <Form id = "form1"><h2 style={{textAlign:"center"}}> <img src="img/icons8-year_of_monkey.png"  alt="image" /> <br></br>Get Our Newsletter</h2>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content" id='modal1'>
+      
+      <div class="modal-body">
+      <Form id = "form1"><h2 style={{textAlign:"center"}}> <img src="img/icons8-year_of_monkey.png"  alt="image" /> <br></br>Get Our Newsletter</h2>
     <p style={{textAlign:"center", color:"blue"}}> Want latest and greatest from our team striaght to your inbox?<br></br>
     chuck us your details and get a sweet weekly email </p>
         <br></br>
@@ -231,11 +138,134 @@ processes.
           </Col>
           </Row>
         </Form>
-     
-      </Popup>
+   
+      </div>
+      
     </div>
-	</div>
   </div>
+</div>
+    <div id="top_content" className="top_cont_outer bgcolor">
+		<div id ="bk" className="top_cont_inner1">
+			<div className="container">
+				<div className="top_content">
+					<div className="row">
+						<div className="col-lg-5 col-sm-12">
+							<div className="top_left_cont flipInY wow animated">
+								{/* <h3>Automated Anamoly Detection</h3> */}
+								<h2>About/ <img src="img/Header.png"  alt="image" /></h2>
+                
+								<p> Data quality issues are frequently caused by corrupted data delivery and unaligned
+changes or releases in source system. In many cases, the negative impact of these
+issues becomes only visible in the final report often undiscovered until data reports
+are published. </p>
+								</div>
+						</div>
+						<div className="col-lg-5 col-sm-12 is1" > <br></br></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    
+  <div className="pattren" >
+  <div>
+          <div id="about"  >
+        <div className=" pattren container">
+       
+          <div className="row about-cols" id="col1">
+            <div className="col-lg-4 col-sm-10 col-md-8   wow fadeInUp">
+              <div className="about-col">
+                <div className="img">
+					
+                  <img src="img/Anomaly detection.png" alt=" Mission"  className="img-fluid icon" />
+                 
+                  {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
+                  <br></br>
+                </div>
+                <br></br> <br></br> <br></br>
+                <h2 className="title">Anamoly<br></br> detection
+for  data<br></br> warehouses</h2>
+                <p>
+                Data quality issues are frequently caused by corrupted data delivery and unaligned
+changes or releases in source system. In many cases, the negative impact of these
+issues becomes only visible in the final report often undiscovered until data reports
+are published.<br></br> <br></br> <br></br>
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-10 col-md-8   wow fadeInUp" data-wow-delay="0.1s">
+              <div className="about-col">
+                <div className="img">
+			
+                  <img src="img/Benefits.png" alt="" className="img-fluid icon" />
+                  {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
+                  <br></br>
+                </div><br></br> <br></br> <br></br>
+                <h2 className="title">Highly verisatile<br></br>
+with minimal<br></br>maintenance</h2>
+                <p>
+                DIGNA can be used in many places (layers) in a Data Warehouse: it can check incoming data, validate
+data after the load and even identify anomalies in reports you deliver to your users. DIGNA comes with a
+GUI - Client for ad-hoc analysis and a command line interface for integration in an ETL process. <br></br><br></br>
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-sm-10 col-md-8  wow fadeInUp" data-wow-delay="0.2s">
+              <div className="about-col">
+                <div className="img">
+			
+                  <img src="img/Minimal maintenance.png" alt="vision" className="img-fluid icon" />
+                  {/* <div className="icon"><i className="ion-ios-eye-outline" /></div> */}
+                  <br></br>
+                </div><br></br> <br></br> <br></br>
+                <h2 className="title">Benefits of <br></br>
+ using DIGNA</h2>
+<br></br>
+                <p>
+                Human-based monitoring is expensive, error-prone and infeasible in a large
+DWH. DIGNA will learn all patterns in your data and inform you about suspicious
+deviations and optionally, interact with the data warehouse refreshing/publishing
+processes. 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>{/* #about */}
+     
+	  </div>
+
+
+
+  </div>
+	</div>
+ <div style={{ 'background':'black'
+    }}>>
+  <div className="container"  style={{'max-width':"920px", 'background':'black','margin-top':'5%','padding-bottom':'5%'
+    }}>
+    <div className="row"  >
+    <div className='col-lg-4 col-sm-12 col-md-8'  style={{'align-self':'center','margin-top':'5%',"margin":"0 auto",'padding-bottom':'5%'
+    }} id="last11">
+      Powered by <img src="img/dexti.png"  alt="image" />
+     
+    </div>
+    <div  className='col-lg-4 col-sm-12 col-md-8' id="abt2" style={{'align-self':'center','margin-top':'5%',"margin":" auto",'padding-bottom':'5%'
+    }} id='last23'>
+    
+    <a href="#" className="last2" data-toggle="modal" data-target="#exampleModalCenter">Request a Demo</a> 
+
+    {/* <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+  Request a Demo
+</button> */}
+    </div>
+    <div  className='col-lg-4 col-sm-12 col-md-8' id="abt3" style={{'align-self':'center','margin-top':'5%',"margin":"0 auto",'padding-bottom':'5%'
+    }} id='last33'>
+     <a href="#service" className="last3" data-toggle="modal" data-target="#exampleModalCenter1">Subscribe Newsletter</a>
+
+    </div>
+	
+    </div>
+</div>
+</div>
   </div>
 
        
