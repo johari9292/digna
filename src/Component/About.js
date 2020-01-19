@@ -109,7 +109,7 @@ onsubmit = (e)=>{
 
 <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content" id='modal1'>
+    <div class="modal-content" id='modal2'>
       
       <div class="modal-body">
       <Form id = "form1"><h2 style={{textAlign:"center"}}> <img src="img/icons8-year_of_monkey.png"  alt="image" /> <br></br>Get Our Newsletter</h2>

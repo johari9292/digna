@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Responsive from 'react-responsive-decorator';
 import axios from 'axios';
-import Popup from "reactjs-popup";
+
 // import { BrowserRouter as Router } from 'react-router-dom';
 import { Col, Button,Row, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import './nav.css'
-import Popupcomp from './popup1'
+
 class  NavbarPage extends React.Component{
   constructor() {
     super();
@@ -52,35 +52,11 @@ class  NavbarPage extends React.Component{
 render() {
   return ( 
    
-    // <div>
-    //     <div className="header">
-    //         <nav className="navbar navbar-dark navbar-expand-md navigation-clean-search">
-    //             <div className="container"><a href="#" className="navbar-brand"><img src="/img/Header.png" /></a><button data-toggle="collapse" data-target="#navcol-1" className="navbar-toggler"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon"></span></button>
-    //                 <div
-    //                     className="collapse navbar-collapse " id="navcol-1">
-    //                      <nav id="nav-menu-container " fixed>
-    //     <ul className="nav-menu "  target="_self" >
-    //       <li className=" list1"><a  href="#">Home</a></li>
-    //       <li  className=" list1"><a href="#t">About Us</a></li>
-    //       <li  className=" list1"><a href="#">Services</a></li>
-    //       <li  className=" list1"><a href="#">Contact</a></li>
-    //      <Popupcomp/>
         
-         
-    //     </ul>
-    //   </nav>
-                        
          
         
          
-    //                     {/* <form target="_self" className="form-inline mr-auto">
-    //                         <div className="form-group"><label for="search-field"></label></div>
-    //                     </form><span className="navbar-text"><a href="#" className="login">Log In</a></span><a className="btn btn-light action-button" role="button" href="#">Sign Up</a> */}
-    //                     </div>
-    //     </div>
-    //     </nav>
-    // </div>
-    // </div>
+  
 	<div id="header">
 
 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -146,25 +122,7 @@ render() {
   </div>
 </div>
  
-    {/* <div className="container-fluid">
-
-      <div id="logo" className="pull-left">
-        
-        <a href="#intro"><img src="img/Header.png" alt="" title="" /></a>
-      </div>
-
-      <nav id="nav-menu-container"   className="navbar navbar-dark navbar-expand-md navigation-clean-search">
-        <ul className="nav-menu">
-          <li className=" list1"><a  href="#">Home</a></li>
-          <li  className=" list1"><a href="#t">About Us</a></li>
-          <li  className=" list1"><a href="#">Services</a></li>
-          <li  className=" list1"><a href="#">Contact</a></li>
-         <Popupcomp/>
-        
-         
-        </ul>
-      </nav>
-    </div> */}
+    
      <nav className="navbar navbar-light navbar-expand-md" style={{backgroundColor: '#f9f9f9'}}>
         <div className="container-fluid"><a href="#" className="navbar-brand" style={{marginLeft: '180px'}}><img src="/img/Header.png" /></a><button data-toggle="collapse" data-target="#navcol-1" className="navbar-toggler"><span className="sr-only">Toggle navigation</span><span className="navbar-toggler-icon" /></button>
           <div className="collapse navbar-collapse" id="navcol-1">
